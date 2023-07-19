@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity"
+    android:background="@drawable/signupbackground"
+    >
+
+    <TextView
+        android:id="@+id/Signup"
+        android:layout_width="400dp"
+        android:layout_height="65dp"
+        android:text="Sign up"
+        android:textSize="50dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/UserText"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/Signup"
+        android:text="Username"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/UserEditText"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/UserText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundededittextbackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:hint="Username"
+        />
+
+    <TextView
+        android:id="@+id/PasswordText"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/UserEditText"
+        android:text="Password"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/PasswordText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundededittextbackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:hint="Min 8 Character"
+        />
+
+    <TextView
+        android:id="@+id/ConfirmPasswordText"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/PasswordEditText"
+        android:text="ConfirmPassword"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <EditText
+        android:id="@+id/ConfirmPasswordEditText"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/ConfirmPasswordText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundededittextbackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:hint="Confirm Password"
+        />
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ConfirmPasswordEditText"
+        android:layout_marginTop="20dp"
+        android:text="Continue"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FBBC04"
+        android:background="@drawable/bottoncustom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/AlreadyText"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ContinueButton"
+        android:text="Already have an account?"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/SigninText"
+        android:layout_toRightOf="@+id/AlreadyText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ContinueButton"
+        android:text="Sign in"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#5994F3"
+        android:layout_marginRight="30dp"
+        />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/backButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:srcCompat="@drawable/backicon" />-->
+
+</RelativeLayout>

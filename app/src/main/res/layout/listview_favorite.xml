@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/image_food"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:clipToOutline="true"
+                android:outlineProvider="bounds"
+                 />
+
+
+            <Button
+                android:id="@+id/DetailButton"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/foodname"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="93dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bottoncustom"
+                android:backgroundTint="#FBBC04"
+                android:text="See Detail"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/foodname"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:text="@{favoriteItemData.foodName}"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/DeleteIcon"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/deleteicon"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="290dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#E6E6E6"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="180dp">
+
+                <TextView
+                    android:id="@+id/tagfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="@{favoriteItemData.tag}"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

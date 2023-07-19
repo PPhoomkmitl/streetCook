@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity"
+    android:background="@drawable/signupbackground">
+
+    <TextView
+        android:id="@+id/Signin"
+        android:layout_width="400dp"
+        android:layout_height="65dp"
+        android:text="Sign In"
+        android:textSize="50dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/UserEditText"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/Signin"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundededittextbackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:hint="Username"
+        android:drawableStart="@drawable/circlebaseline1"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/UserEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundededittextbackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:drawableStart="@drawable/usernamelockicon"
+        android:drawablePadding="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordEditText"
+        android:text="Stay Signed in"
+        android:textColor="#898989"
+        android:checked="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/CheckBox"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FBBC04"
+        android:background="@drawable/bottoncustom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/forgotpassText"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/LoginButton"
+        android:text="Forgot Password?"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#5994F3"
+        android:layout_marginLeft="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/backicon" />
+
+</RelativeLayout>

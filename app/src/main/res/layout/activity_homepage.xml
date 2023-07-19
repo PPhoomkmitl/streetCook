@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity"
+    android:background="@drawable/signupbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+
+            <TextView
+                android:id="@+id/textHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:textSize="40dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textHello"
+                android:text="Name"
+                android:textSize="40dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/homepic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/circle"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+            <TextView
+                android:id="@+id/textExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textName"
+                android:text="Let’s cook high -quality foods with us!" />
+
+            <TextView
+                android:id="@+id/Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textExplain"
+                android:layout_marginTop="15dp"
+                android:ems="100"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/search_24"
+                android:drawableTint="@android:color/darker_gray"
+                android:hint="Search your recipes"
+                android:textSize="15dp"/>
+
+            <View
+                android:id="@+id/fakeUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/Search"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Search"
+                android:layout_marginTop="10dp"
+                android:text="Category"
+                android:textSize="25dp" />
+
+            <!--Category-->
+
+            <HorizontalScrollView
+                android:id="@+id/scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textCategory"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:id="@+id/categoryAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/category1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/circle1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/beef"
+                            app:shapeAppearanceOverlay="@style/circular" />
+
+                        <TextView
+                            android:id="@+id/nameCircle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/circle1"
+                            android:layout_centerHorizontal="true"
+                            android:text="Beef" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/category2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/circle2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/seafood"
+                            app:shapeAppearanceOverlay="@style/circular" />
+
+                        <TextView
+                            android:id="@+id/nameCircle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/circle2"
+                            android:layout_centerHorizontal="true"
+                            android:text="Seafood" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/category3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/circle3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/chicken"
+                            app:shapeAppearanceOverlay="@style/circular" />
+
+                        <TextView
+                            android:id="@+id/nameCircle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/circle3"
+                            android:layout_centerHorizontal="true"
+                            android:text="Chicken" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/category4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/circle4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/vegetarian"
+                            app:shapeAppearanceOverlay="@style/circular" />
+
+                        <TextView
+                            android:id="@+id/nameCircle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/circle4"
+                            android:layout_centerHorizontal="true"
+                            android:text="Vegeterian" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/category5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/circle5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dessert"
+                            app:shapeAppearanceOverlay="@style/circular" />
+
+                        <TextView
+                            android:id="@+id/nameCircle5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/circle5"
+                            android:layout_centerHorizontal="true"
+                            android:text="Dessert" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/category6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/circle6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pasta"
+                            app:shapeAppearanceOverlay="@style/circular" />
+
+                        <TextView
+                            android:id="@+id/nameCircle6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/circle6"
+                            android:layout_centerHorizontal="true"
+                            android:text="Pasta" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <!--Recommend Food-->
+
+
+            <TextView
+                android:id="@+id/textRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scroll1"
+                android:layout_marginTop="10dp"
+                android:text="Recommend food"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/textSeeAll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scroll1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/textRecommend"
+                android:text="See all"
+
+                android:textSize="15dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textRecommend"
+                android:orientation="horizontal"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+
+                        <!-- เนื้อหา CardView ที่ต้องการใส่ -->
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="185dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageRecom_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"/>
+
+
+                            <TextView
+                                android:id="@+id/textRecom_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Card 1"
+                                android:textAlignment="viewStart"
+                                android:textSize="18sp"
+                                android:padding="4dp"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="185dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+
+                        <!-- เนื้อหา CardView ที่ต้องการใส่ -->
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="180dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageRecom_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"/>
+
+
+                            <TextView
+                                android:id="@+id/textRecom_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Card 2"
+                                android:textAlignment="viewStart"
+                                android:textSize="18sp"
+                                android:padding="4dp"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="185dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+
+                        <!-- เนื้อหา CardView ที่ต้องการใส่ -->
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="180dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageRecom_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"/>
+
+
+                            <TextView
+                                android:id="@+id/textRecom_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Card 3"
+                                android:textAlignment="viewStart"
+                                android:textSize="18sp"
+                                android:padding="4dp"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Favorite Food-->
+
+            <TextView
+                android:id="@+id/textFavoriteFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrollView1"
+                android:layout_marginTop="10dp"
+                android:text="Favorite food"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textSeeAll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrollView1"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/textFavoriteFood"
+                android:text="See all"
+
+                android:textSize="15dp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textFavoriteFood"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:layout_marginBottom="50dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Fav1"
+                        android:layout_width="190dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+
+                        <!-- เนื้อหา CardView ที่ต้องการใส่ -->
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="185dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageFavor_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"/>
+
+
+                            <TextView
+                                android:id="@+id/textFavor_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Card 1"
+                                android:textAlignment="viewStart"
+                                android:textSize="18sp"
+                                android:padding="4dp"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Fav2"
+                        android:layout_width="190dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+
+                        <!-- เนื้อหา CardView ที่ต้องการใส่ -->
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="180dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageFavor_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"/>
+
+
+                            <TextView
+                                android:id="@+id/textFavor_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Card 1"
+                                android:textAlignment="viewStart"
+                                android:textSize="18sp"
+                                android:padding="4dp"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Fav3"
+                        android:layout_width="190dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+
+                        <!-- เนื้อหา CardView ที่ต้องการใส่ -->
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="180dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageFavor_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"/>
+
+
+                            <TextView
+                                android:id="@+id/textFavor_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Card 1"
+                                android:textAlignment="viewStart"
+                                android:textSize="18sp"
+                                android:padding="4dp"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/noFavText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Favorite Food"
+                android:textSize="20dp"
+                android:layout_below="@id/textFavoriteFood"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="100dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30sp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="labeled"/>
+</RelativeLayout>

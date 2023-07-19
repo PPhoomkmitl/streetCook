@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OtpActivity"
+    android:background="@drawable/signupbackground">
+
+    <TextView
+        android:id="@+id/OTPVerification"
+        android:layout_width="400dp"
+        android:layout_height="65dp"
+        android:text="OTP Verification"
+        android:textSize="45dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/OTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OTPVerification"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/OTP1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/OTP"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/roundededittextbackground"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/OTP2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/OTP"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/OTP1"
+            android:background="@drawable/roundededittextbackground"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/OTP3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/OTP"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/OTP2"
+            android:background="@drawable/roundededittextbackground"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/OTP4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/OTP"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/OTP3"
+            android:background="@drawable/roundededittextbackground"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/OTP5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/OTP"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/OTP4"
+            android:background="@drawable/roundededittextbackground"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/OTP6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/OTP"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/OTP5"
+            android:background="@drawable/roundededittextbackground"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="10dp" />
+        
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/OTP"
+        android:layout_marginTop="30dp"
+        android:text="Continue"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FBBC04"
+        android:background="@drawable/bottoncustom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/backicon" />
+
+
+</RelativeLayout>
